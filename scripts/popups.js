@@ -72,7 +72,7 @@ function bodyLock() {
          }
     }
     body.style.paddingRight = lockPaddingValue;
-    body.classList.add('.lock');
+    body.classList.add('lock');
 
     unlock = false;
 
@@ -102,8 +102,9 @@ function bodyUnlock() {
 }
 
 document.addEventListener('keydown', function(e) {
-    if(e.witch === 27) {
+    console.log(e.code);
+    if(e.code === 'Escape') {
         const popupActive = document.querySelector('.popup.open');
         popupClose(popupActive);
     }
-})
+});
