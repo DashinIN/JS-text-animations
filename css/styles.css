@@ -137,6 +137,35 @@ h2 {
     left: 0;
 }
 
+
+
+
+
+
+.video__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+}
+.video__item {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+
+.play {
+    color: #000;
+}
+.play::before {
+    content: "\f04b";
+}
+
+
+
+
+
+
 .text {
     padding: 70px 0;
     font-size: 24px;
