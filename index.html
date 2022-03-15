@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+    
+   
+
     <title>Серый человек придет за томасом шелби</title>
 </head>
 <body>
@@ -24,37 +29,32 @@
 
         <div class="page">
 
+            
+         <!--
 
-        <div class="video">
-            <div class="video__content">
-                <h2 class="video__header  _anim-items ">Седьмой сезон</h2>
-                <div class="video__items">
-                    <div class="video__item">
-                        <img src="" alt="" class="video__image">
-                        <div class="video__play">
-                            <i class="play"></i>
-                        </div>
-                        <div class="h3">Name</div>
-                    </div>
-                    <div class="video__item">
-                        <div class="h3">Name</div>
-                    </div>
-                    <div class="video__item">
-                        <div class="h3">Name</div>
-                    </div>
-                    <div class="video__item">
-                        <div class="h3">Name</div>
-                    </div>
-                    <div class="video__item">
-                        <div class="h3">Name</div>
-                    </div>
-                    <div class="video__item">
-                        <div class="h3">Name</div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="video-wrapper">
+            <video
+    id="my-video"
+    class="video-js vjs-theme-fantasy"
+    width="900"
+    controls
+    preload="auto"
+  
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="video/2022-03-14 13-47-23.mp4" type="video/mp4" />
+    <source src="MY_VIDEO.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
         </div>    
+    -->
 
 
 
@@ -74,6 +74,53 @@
                 </div>
             </div>
        
+
+
+            <div class="series">
+                <div class="series__container">
+                    <div class="series__title">
+                        Серии
+                    </div>
+
+                    <div class="series__items">
+                        <div class="series__item">
+                            <div class="series__number">Серия 1</div>
+                            <h3 class="series__name">Чёрный день</h3>
+                        </div>
+                   
+                    
+                        <div class="series__item">
+                            <div class="series__number">Серия 2</div>
+                            <h3 class="series__name">Чёрная рубашка</h3>
+                        </div>
+                  
+                   
+                        <div class="series__item">
+                            <div class="series__number">Серия 3</div>
+                            <h3 class="series__name">Золото</h3>
+                        </div>
+                    
+                    
+                        <div class="series__item">
+                            <div class="series__number">Серия 4</div>
+                            <h3 class="series__name">Сапфир</h3>
+                        </div>
+                  
+                  
+                        <div class="series__item">
+                            <div class="series__number">Серия 5</div>
+                            <h3 class="series__name"></h3>
+                        </div>
+                   
+                    
+                        <div class="series__item">
+                            <div class="series__number">Серия 6</div>
+                            <h3 class="series__name"></h3>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
 
             <div class="moments">
                 <div class="moments__container _container">
@@ -165,10 +212,28 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#" class="popup__close close-popup">x</a>
-                <div class="popup__title">Eto modal window 2</div>
-                <div class="popup__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolores quibusdam non vero nostrum, veritatis dolorem delectus! Iste inventore minus error hic soluta molestias odit aperiam! Maiores recusandae ab hic.
-                </div>
+                <div class="video-wrapper">
+                    <video
+            id="my-video"
+            class="video-js vjs-theme-fantasy"
+           width="1000px"
+            controls
+            preload="auto"
+          
+            poster="MY_VIDEO_POSTER.jpg"
+            data-setup="{}"
+          >
+            <source src="" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+                </div>    
             </div>
         </div>
     </div>
@@ -197,7 +262,18 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+    
     <script src="scripts/script.js"></script>
     <script src="scripts/popups.js"></script>
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+   
 </body>
 </html>
